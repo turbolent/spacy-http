@@ -109,7 +109,7 @@ def serve(port: int, language: str, ner: bool) -> None:
     logging.info("Serving on port %d ...", port)
 
     meinheld.set_access_logger(None)
-    app.run(port=port, server="meinheld", workers=16, quiet=True, debug=False)
+    app.run(host='0.0.0.0', port=port, server="meinheld", workers=16, quiet=True, debug=False)
 
 
 if __name__ == '__main__':
