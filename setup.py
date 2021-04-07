@@ -21,7 +21,7 @@ setup(name='spacy-http',
       packages=['spacyHttp'],
       install_requires=[
           "click==6.7",
-          "bottle==0.12.13",
+          "bottle==0.12.19",
           "meinheld==0.6.1",
           "spacy==2.0.12",
           "coloredlogs==10.0"
